@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+</head>
+<body>
+  
+    <!-- Start Quiz -->
+<div class="strat_btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+<div class="Info_Box">
+
+  <div class="info-title"><span>Rules of Quiz</span></div>
+
+  <div class="infolist">
+
+    <div class="info">1. You will have only <span>15 Sec</span> per each question.</div>
+    <div class="info">2. Once you select your, it cant't be undone.</div>
+    <div class="info">3. You cant't select any option once time goes off.</div>
+    <div class="info">4. You cant't exit from the quiz while you are playing.</div>
+    <div class="info">5. You will get points on the basic of your correct answers.</div>
+
+  </div>
+
+  <div class="buttons">
+      <button class="restart">Exit</button>
+      <button class="quite">Continue</button>
+  </div>
+</div>
+
+    <!-- Quiz Box -->
+<div class="quiz_box">
+  <header>
+    <div class="title">Quiz Game</div>
+    <div class="timer">
+      <div class="time_left_txt">Time Left</div>
+      <div class="timer_sec">15</div>
+    </div>
+
+    <div class="time_line"></div>
+  </header>
+  <section>
+
+    <div class="que_text">
+      <!-- options from js -->
+    </div>
+
+    <div class="option_list">
+      <!-- options from js -->
+    </div>
+
+  </section>
+
+      <!-- footer -->
+
+  <footer>
+    <div class="total_que">
+      <!-- count no from js -->
+    </div>
+    <button class="next_btn">Next Ques</button>
+  </footer>
+
+  <!-- Result Box -->
+
+<div class="result_box">
+    <div class="icon">
+      <div class="icon">
+        <i class="fac fa-crown"></i>
+      </div>
+      <div class="complete_text">You have completed the quiz!</div>
+    <div class="score_text">
+      <!-- Result from js -->
+    </div>
+
+    <div class="buttons">
+      <button class="restart">Replay</button>
+      <button class="quite">Quit</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
