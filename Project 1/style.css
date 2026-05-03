@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: 'poppins' sans-serif;
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
 body{
@@ -9,8 +9,8 @@ body{
 }
 .app{
   background: #fff;
-  width: 90%;
-  max-width: 600px;
+  width: 80%;
+  max-width: 500px;
   margin: 100px auto 0;
   border-radius: 10px;
   padding: 30px;
@@ -29,6 +29,7 @@ body{
   font-size: 18px;
   color: #001e4d;
   font-weight: 600;
+  margin-bottom: 5px;
 }
 .btn{
   background: #fff;
@@ -43,9 +44,12 @@ body{
   cursor: pointer;
   transition: all 0.3s;
 }
-.btn:hover{
+.btn:hover:not([disabled]){
   background: #222;
   color: #fff;
+}
+.btn:disabled{
+  cursor: no-drop;
 }
 #next-btn{
   background: #001e4d;
@@ -58,4 +62,10 @@ body{
   border-radius: 4px;
   cursor: pointer;
   display: none;
+}
+.correct{
+  background: #9aeabc;
+}
+.incorrect{
+  background: #ff9393;
 }
